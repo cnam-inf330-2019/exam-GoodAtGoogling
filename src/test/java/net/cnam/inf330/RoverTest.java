@@ -46,7 +46,7 @@ public class RoverTest {
         mcc.clearRovers();
     }
 
-    /* TODO 3) 5) Write a new test for a scenario where 2 rovers collide at the same position on the grid
+    /* TODO 3) 5) Write a new test for a scenario where 2 rovers collide at the same position on the gridd
      *   and the second rover must pull back as a result
      */
 
