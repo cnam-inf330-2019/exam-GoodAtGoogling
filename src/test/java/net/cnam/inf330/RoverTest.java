@@ -26,7 +26,7 @@ public class RoverTest {
      * Application must catch an InvalidRoverPositionException if a rover has moved out of the grid.
      * Rover must pull back after moving out of the grid.
      */
-    // TODO 5) Change this test to check that the rover pulls back after moving out of the gridff
+    // TODO 5) Change this test to check that the rover pulls back after moving out of the gridfff
     @Test
     public void testRoverOutOfGridException() {
         MissionCommandCenter mcc = new MissionCommandCenter(1, 1);
