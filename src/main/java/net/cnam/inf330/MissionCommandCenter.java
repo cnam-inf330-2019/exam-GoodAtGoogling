@@ -10,7 +10,7 @@ public class MissionCommandCenter {
     private int gridHeight;
     private List<Rover> rovers;
 
-    // TODO 1) Make MCC a singleton class
+    // TODO 1) Make MCC a singleton classf
 
     /**
      * Create a MCC without a predefined grid size.
