@@ -27,9 +27,12 @@ public class MissionCommandCenter {
         return instance;
     }
 
+    // FIXME Missing getInstance with parameters
+
     /**
      * Create a MCC without a predefined grid size.
      */
+    // FIXME Constructor should be private
     public MissionCommandCenter() {
         this.gridWidth = -1;
         this.gridHeight = -1;
@@ -42,6 +45,7 @@ public class MissionCommandCenter {
      * @param gridWidth  The width (X axis) of the exploration grid
      * @param gridHeight The height (Y axis) of the exploration grid
      */
+    // FIXME Constructor should be private
     public MissionCommandCenter(int gridWidth, int gridHeight) {
         this.gridWidth = gridWidth;
         this.gridHeight = gridHeight;
@@ -123,6 +127,7 @@ public class MissionCommandCenter {
             try {
                 checkRoverPosition(rover);
             } catch (InvalidRoverPositionException i) {
+                // FIXME Why not implement moveBackward in Rover ?
                 rover.rotateRight();
                 rover.rotateRight();
                 rover.moveForward();
@@ -172,6 +177,7 @@ public class MissionCommandCenter {
         int RovX = this.rovers.get(rover.getId()).getX();
         int RovY = this.rovers.get(rover.getId()).getY();
 
+        // FIXME ???
         int aireRov = RovX*RovY;
 
         return (aireRov/aireTot)*100;

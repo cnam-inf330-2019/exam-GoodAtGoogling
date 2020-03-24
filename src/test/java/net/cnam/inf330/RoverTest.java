@@ -21,6 +21,7 @@ public class RoverTest {
     public static void initMissionCommandCenter() {
         // TODO 1) Initialize MCC singleton instance before the test methods are run
         MissionCommandCenter.getInstance();
+        // FIXME The idea was to store the instance in a member variable
     }
 
     /**
@@ -42,6 +43,7 @@ public class RoverTest {
 
         assertThrows(InvalidRoverPositionException.class, thrum);
 
+        // FIXME ???
         assertTrue(rover.getX()<1 && rover.getY()<1 && rover.getX()>0 && rover.getY()>0);
         mcc.clearRovers();
     }
@@ -88,7 +90,7 @@ public class RoverTest {
         List<String> inputLines = Main.readResourceFile("rover_test_input.txt");
         List<String> expectedOutputLines = Main.readResourceFile("rover_test_output.txt");
 
-        // TODO 7) Test that processing the input lines produces an output that matches the expected outpurt lines
+        // TODO FIXME 7) Test that processing the input lines produces an output that matches the expected outpurt lines
         fail();
     }
 }
